@@ -1,0 +1,254 @@
+/* --black: #000000ff;
+--oxford-blue: #14213dff;
+--orange-web: #fca311ff;
+--platinum: #e5e5e5ff;
+--white: #ffffffff; */
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "EB Garamond", serif;
+}
+
+abbr {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+div#header {
+  min-height: 250px;
+  background: radial-gradient(circle, #fca311ff 15%, rgb(241, 221, 178) 5%, #14213dff 80%);
+  position: relative;
+  
+}
+
+div#header nav#navbar-menu { 
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45%;  
+}
+
+nav#navbar-menu ul {
+  margin: 0 auto;
+}
+
+nav#navbar-menu>ul>li {
+  list-style: none;
+  float: left;
+  width: 25%;
+}
+
+nav#navbar-menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20% 0 20% 0;
+}
+
+nav#navbar-menu ul li a:hover {
+  color: rgb(252, 162, 17);
+}
+
+nav#navbar-menu li#pianeti {
+  position: relative;
+}
+
+nav#navbar-menu li#pianeti:hover ul#navbar-pianeti {
+  display: block;
+}
+
+nav#navbar-menu li#pianeti:hover {
+  background-color: rgba(20, 33, 61, 0.5);
+}
+
+ul#navbar-pianeti {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  display: none;
+}
+
+li#pianeti ul#navbar-pianeti li {
+  list-style: none;
+  background-color: rgba(20, 33, 61, 0.795);
+  width: 100%;
+}
+
+ul#navbarBox-satelliti {
+  display: none;
+  list-style: none;
+  background-color: grey;
+  position: absolute;
+  right: 0;
+  width: 100vw;
+}
+
+li#satelliti ul#navbarBox-satelliti li {
+  float: left;
+  width: 33.33333333333%;
+  text-align: center;
+}
+
+li#satelliti ul#navbarBox-satelliti li h3 {
+  margin: 0 auto;
+  padding-top: 3%;
+  font-size: 1.6rem;
+}
+
+li#satelliti ul#navbarBox-satelliti li a {
+  margin: 0 auto;
+  padding: 1%;
+  display: block;
+}
+
+li#satelliti:hover ul#navbarBox-satelliti{
+  display: block;
+}
+
+.sistema-solare__title {
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+  color: #14213dff;
+  text-transform: capitalize;
+}
+
+.sistema-solare__title--principale {
+  color: rgba(252, 162, 17, 0.274);
+  font-size: 60px;
+  width: 100%;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  text-shadow: 2px 2px 2px rgb(85, 83, 83);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#main {
+  background-color: #e5e5e5ff;
+  padding: 20px;
+}
+
+div.sistema-solare {
+  background-color: #fca311ff;
+  padding: 20px;
+  border: 3px solid #000000ff;
+}
+
+.sistema-solare__body {
+  font-size: 19px;
+  line-height: 1.15;
+}
+
+.sistema-solare__body li {
+  list-style-image: url("../../assets/img/icons8-pianeta-8.png");
+}
+
+.pianeta-container {
+  margin: 20px 0 0;
+  font-size: 0;
+}
+
+.pianeta-container__card {
+  width: calc(33.333333% - 20px);
+  border: 2px solid black;
+  padding: 20px 0;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 10px 20px;
+}
+
+
+div.pianeta-container__card:nth-of-type(3n+1){
+  margin-left: 0;
+  width: calc(33.333333% - 10px);
+}
+
+div.pianeta-container__card:nth-of-type(3n){
+  margin-right: 0;
+  width: calc(33.333333% - 10px);
+}
+
+/*.pianeta-container__card--boundary-left {
+  margin-left: 0;
+  width: calc(33.333333% - 10px);
+}
+
+.pianeta-container__card--boundary-right {
+  margin-right: 0;
+  width: calc(33.333333% - 10px);
+}*/
+
+.pianeta-container__card h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.pianeta-container__card p {
+  margin: 0;
+}
+
+.pianeta-container__head {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px ridge black;
+}
+
+.pianeta-container__footer {
+  margin-top: 20px;
+  border-top: 2px ridge black;
+  padding-top: 20px;
+  text-align: center;
+  color: #14213dff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.pianeta-container__body {
+  padding: 0 20px;
+}
+
+div.pianeta-container div.pianeta-container__head a {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+div.pianeta-container div.pianeta-container__head:hover {
+  background-color: #14213dff;
+  color: #fca311ff;
+}
+
+div#footer {
+  background-color: #fca311ff;
+  color: #14213dff;
+}
+
+div#footer-container {
+  padding: 20px;
+}
+
+dt,
+dd {
+  display: inline-block;
+  margin: 0;
+}
+
+dt {
+  min-width: 150px;
+}
