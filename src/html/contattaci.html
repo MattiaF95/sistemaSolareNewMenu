@@ -13,7 +13,7 @@
     <title>Il sistema solare</title>
 
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/print.css" media="print" />
+    <link rel="stylesheet" href="../css/contattaci.css" />
 </head>
 <body>
     <div id="header">
@@ -81,9 +81,46 @@
               </ul>
           </li>
             <li><a href="chi-siamo.html">Chi Siamo</a></li>
-            <li><a href="contattaci.html">Contattaci</a></li>
+            <li><a href="../../index.html">Home</a></li>
           </ul>
         </nav>
+      </div>
+
+      <div id="main-container">
+        <div id="cointainer-form">
+          <h2>Contattaci</h2>
+          <form action="" method="post">
+            <div class="div-input">
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome" placeholder="Inserisci nome" required pattern="[A-Za-z]{3,}" title="Inserisci almeno 3 caratteri">
+            </div>
+
+            <div class="div-input">
+              <label for="cognome">Cognome</label>
+              <input type="text" name="cognome" id="cognome" placeholder="Inserisci cognome" required pattern="[A-Za-z]{3,}" title="Inserisci almeno 3 caratteri">
+            </div>
+
+            <div class="div-input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Inserisci email" required>
+            </div>
+
+            <div class="div-input">
+              <label for="messaggio">Messaggio</label>
+              <input type="text" name="messaggio" id="messaggio" placeholder="Inserisci un messaggio" required pattern="[A-Za-z]{0,1000}" title="Inserisci max 1000 caratteri">
+            </div>
+
+            <div class="div-input">
+              <label for="privacy">Informativa sulla privacy</label>
+              <input type="checkbox" name="privacy" id="privacy" value="1" required>
+              <span>Acconsento al trattamento dei dati personali. <br>Per visionare la privacy clicca <a href="">qui</a>.</span>
+            </div>
+
+            <div class="div-input">
+              <button type="submit">Invia</button>
+            </div>
+          </form>
+        </div>
       </div>
 </body>
 </html>

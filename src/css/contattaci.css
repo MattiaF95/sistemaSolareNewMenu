@@ -1,0 +1,85 @@
+body {
+  background-image: url(../../assets/img/pattern6.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+
+div#header nav#navbar-menu li:last-of-type a {
+  color: rgb(141, 5, 5);
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(240, 248, 255, 0.466);
+}
+
+div#main-cointainer {
+  display: flex;
+  justify-content: center;
+}
+
+div#cointainer-form {
+  background-color: white;
+  width: 50%;
+  margin: 2em auto; /* Auto sui lati lo centra */
+  border: 2px solid rgb(71, 69, 69);
+  box-shadow: 5px 5px 5px rgba(71, 69, 69, 0.8);
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+div#cointainer-form div {
+  padding: 1em;;
+}
+
+div#cointainer-form h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+div#cointainer-form form label {
+  width: 30%;
+}
+
+div#cointainer-form form input {
+  width: 70%;
+  font-size: 1em;
+  padding: 0.3em;
+}
+
+div#cointainer-form form input[type="checkbox"] {
+  width: 1em;
+  margin: 0 2em 0 3em;
+}
+
+div.div-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.div-input button {
+  width: 70%;
+  background-color: rgb(26, 26, 116);
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 0.5em;
+  border-radius: 10em;
+  border: 2px solid rgb(71, 69, 69);
+  box-shadow: 5px 5px 5px rgba(71, 69, 69, 0.8);
+}
+
+div.div-input input:valid {
+  border: 2px solid green;
+}
+
+div.div-input input:invalid {
+  border: 2px solid red;
+}
