@@ -5,11 +5,12 @@ body {
 }
 
 
-div#header nav#navbar-menu li:last-of-type a {
+div#header nav#navbar-menu li#back-home a {
   color: rgb(141, 5, 5);
+  font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: rgba(240, 248, 255, 0.466);
+  justify-content: center;
 }
 
 div#main-cointainer {
@@ -74,6 +75,11 @@ div.div-input button {
   border-radius: 10em;
   border: 2px solid rgb(71, 69, 69);
   box-shadow: 5px 5px 5px rgba(71, 69, 69, 0.8);
+}
+
+div.div-input button:hover {
+  background-color: rgb(116, 116, 228);
+
 }
 
 div.div-input input:valid {
